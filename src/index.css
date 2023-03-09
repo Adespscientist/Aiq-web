@@ -3,3 +3,23 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.header__body {
+    background-image: url('./utils//assets//heroBg.png');
+    background-size: cover;
+    height: 100%;
+    background-repeat: no-repeat;
+    width: 100vw;
+    /* position: fixed; */
+}
+
+.bg-section {
+
+    background-image: url('./utils/assets/Frame\ 50.png');
+    background-size: cover;
+    height:500px;
+    padding:20px;
+    background-repeat: no-repeat;
+    width: 100vw;
+    /* position: fixed; */
+}
