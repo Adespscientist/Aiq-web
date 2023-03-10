@@ -10,7 +10,7 @@ function Bespoke() {
      
         <div className="flex items-center justify-center ">
         <div className="flex flex-col md:flex-row  md:justify-around">
-        <div className=" img">
+        <div className="img">
           <img src={solution} alt="solution w-[200px] h-[100px] md:w-[400px] md:h-[300px]" style={{width:400, height:300, borderRadius:20}}/>
         </div>
         <div className="w-full md:w-[50%] content mt-5 items-center ">

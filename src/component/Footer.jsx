@@ -4,6 +4,7 @@ import icon1 from '../utils/assets/lSocial Media.png'
 import icon2 from '../utils/assets/njb.png'
 import icon3 from '../utils/assets/2Social Media.png'
 import icon4 from '../utils/assets/Social Media.png'
+import { color } from '../utils/data/data'
 function Footer() {
     const footer = {
         quickLink:[
@@ -59,8 +60,9 @@ function Footer() {
         ]
     }
   return (
-    <div className="flex justify-between items-center m-[20px] p-[20px]" style={{borderTopWidth: 1, borderColor:'#dddddd'}}>
-        <div className='w-[40%]'>
+    <div>
+    <div className="grid justify-items-left place-items-center  grid-cols-1 md:grid-cols-4 gap-4 items-center m-[20px] p-[20px]" style={{borderTopWidth: 1, borderColor:'#dddddd'}}>
+        <div className='w-[100%] flex flex-col justify-center items-center'>
             <img src={logo} alt="logo" style={{width:100, objectFit: 'contain', marginBottom:20}}/>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam accusantium tempore quis voluptatum natus dignissimos nemo officiis iure repellat asperiores?</p>
         </div>
@@ -68,7 +70,7 @@ function Footer() {
             {footer.quickLink.map((item)=>(
                 <div>
                     <p>{item.Header}</p>
-                <div className="">
+                <div className="m-2">
                     <span>{item.title}</span>
                 </div>
                 </div>
@@ -76,7 +78,7 @@ function Footer() {
         </div>
         <div className='flex flex-col'>
             {footer.solution.map((item)=>(
-                <div className="mx-4">
+                <div className="m-2">
                     <span>{item.title}</span>
                 </div>
             ))}
@@ -88,7 +90,12 @@ function Footer() {
                  </div>
             ))}
         </div>
+      
     </div>
+      <div className='flex items-center justify-center' style={{backgroundColor:color.primary, color:color.white}}>
+      <span className='p-3'>Aiq &copy; 2023.</span>
+  </div>
+  </div>
   )
 }
 
