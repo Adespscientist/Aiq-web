@@ -20,15 +20,15 @@ function Cycle() {
         },
     ]
   return (
-   <div className="flex flex-col items-center bg-section justify-around text-white mt-[50px] p-4" >
-    <div className='w-[70%]'>
-        <h1 className='text-[30px] text-center'>We Provide data-based software solutions and Infrastructure that cuts across three aspects of the intelligence cycle</h1>
+   <div className="flex flex-col items-center bg-section justify-around text-white mt-[50px] p-4  md:h-[60vh]" >
+    <div className='w-full md:w-[70%]'>
+        <h1 className='text-[24px] md:text-[30px] text-center'>We Provide data-based software solutions and Infrastructure that cuts across three aspects of the intelligence cycle</h1>
     </div>
-    <div className='flex items-center justify-between ' style={{backgroundColor:color.secondary, borderRadius:10, height:200}}>
+    <div className='flex flex-col md:flex-row items-center justify-around '>
         {data.map((item)=>(
-            <div className='mx-4'>
-                <h3>{item.title}</h3>
-                <p>{item.text}</p>
+            <div className='m-4 cycle w-[20%] flex flex-col items-center justify-center'>
+                <h3 className='my-4 text-3xl '>{item.title}</h3>
+                <p className='text-center'>{item.text}</p>
             </div>
         ))}
     </div>
