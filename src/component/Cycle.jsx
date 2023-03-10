@@ -20,11 +20,11 @@ function Cycle() {
         },
     ]
   return (
-   <div className="flex flex-col items-center bg-section justify-around text-white mt-[50px]" >
+   <div className="flex flex-col items-center bg-section justify-around text-white mt-[50px] p-4" >
     <div className='w-[70%]'>
         <h1 className='text-[30px] text-center'>We Provide data-based software solutions and Infrastructure that cuts across three aspects of the intelligence cycle</h1>
     </div>
-    <div className='flex items-center justify-between m-4 p-4' style={{backgroundColor:color.secondary, borderRadius:10, height:200}}>
+    <div className='flex items-center justify-between ' style={{backgroundColor:color.secondary, borderRadius:10, height:200}}>
         {data.map((item)=>(
             <div className='mx-4'>
                 <h3>{item.title}</h3>

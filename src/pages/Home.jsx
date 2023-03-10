@@ -10,8 +10,8 @@ import Footer from '../component/Footer'
 
 const  Home = ()=> {
   return (
-    <div>
-    <div className="header__body">
+    <div className=''>
+    <div className="header__body w-full">
     <Header />
     <HeroSection />
     </div>

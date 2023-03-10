@@ -10,13 +10,13 @@ function Header() {
   const { menuOpen, setMenuOpen, handleMenuClick } = useGlobalContext();
   return (
 
-      <div className="w-full ">
+      <div className="w-full py-4 ">
         <div className="flex items-center justify-between mx-[10px] md:mx-[40px]">
           <div>
             <img
               src={logo}
               alt="logo"
-              style={{ width: 120, height: 120, objectFit: "contain" }}
+              style={{ width: 120,  objectFit: "contain" }}
             />
           </div>
           <div className="hidden md:flex" style={{ color: color.white }}>

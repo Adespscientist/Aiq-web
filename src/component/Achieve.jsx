@@ -7,10 +7,10 @@ function Achieve() {
   return (
     <div className="flex flex-col items-center mt-[60px] p-4">
      
-        <div className="flex  justify-center">
-        <div className="flex flex-row-reverse items-center justify-around">
-        <div className="img">
-          <img src={map} alt="solution" style={{width:500, height:500, borderRadius:20}}/>
+        <div className="flex items-center justify-center">
+        <div className="inline-block  md:flex-row-reverse items-center justify-around">
+        <div className="img w-[50%]">
+          <img src={map} alt="solution" style={{width:500, borderRadius:20}}/>
         </div>
         <div className="content flex-[.6]">
         <div className="text-[38px] w-[65%] text-left text-[700] mb-[40px]" style={{color: color.primary}}>Achieve your Goals with our Advanced AI Technologies</div>
